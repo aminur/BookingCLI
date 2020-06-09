@@ -1,11 +1,12 @@
 
 
 //JS does not have a handy python stringXnum multiply option
-function multipleChar(char, multiple) {
+function multipleChar(char, num_chars) {
   
-  let str = 'xxxx';
+  let str = '';
 
-  for (let i = multiple; i <= 0; i--) {
+  //32                 //not true//go down
+  for (let i = num_chars; i > 0; i--) {
     str = str + char;
   }
 
@@ -28,9 +29,39 @@ function dataFromFile() {
 
   var data = [
         "lizzie",
-        "pamela",
-        "agatha"
+        "pala",
+        "agatha",
+        "Nelson Fernandez"
       ];
 
   return data;
 }
+
+
+// creates the Top border, solution done by Jeffrey
+// function topBorder(){
+//  var top_border =[];
+//  for(let x=table_padding+1; x>0; --x){
+    
+//     top_border = top_border + h_border_char + table_padding_char  
+//     if (x==1){
+//     out( top_border)
+//     };
+ 
+//  };
+
+
+
+// }
+
+//creates Bottom border, Solution done by Jeffrey
+// function bottomBorder(){
+//  var bottom_border =[];
+//  for(let x=table_padding+1; x>0; --x){
+    
+//     bottom_border = bottom_border + h_border_char + table_padding_char  
+//     if (x==1){
+//     out (bottom_border)
+//     };
+ 
+//  };

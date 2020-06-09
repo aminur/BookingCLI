@@ -14,18 +14,37 @@ function tabular(dataArr) {
  
   outputHorizontalBorder(getTableWidth( dataArr ));
 
+  // creates top border
+  // topBorder();  
+  
   dataArr.forEach(element => out( 
     v_border_char +
     multipleChar(table_padding_char, table_padding) +
     element +
-    multipleChar(table_padding_char, table_padding) +
+    multipleChar(
+      table_padding_char, 
+      remainingPadding(
+        table_padding, 
+        element.length, 
+        getTableWidth(dataArr)
+      ),
+    ) +
     v_border_char
   ));
+
+ // creates bottom border
+// bottomBorder();
 
   outputHorizontalBorder( getTableWidth(dataArr) );
 }
 
+function remainingPadding(default_padding, element_length, table_width) {
 
+  return ( (table_width - element_length) + default_padding);
+}
+
+//length of the name
+//
 
 function getTableWidth(dataArr) {
 

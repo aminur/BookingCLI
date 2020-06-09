@@ -10,3 +10,6 @@ var v_border_char = '|';
 
 var table_padding_char = ' ';
 var table_padding = 3;
+
+//space 1 px
+table_padding_char1=""
